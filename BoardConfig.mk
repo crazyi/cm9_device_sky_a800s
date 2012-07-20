@@ -1,7 +1,7 @@
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
--include vendor/sky/a760s/BoardConfigVendor.mk
+-include vendor/sky/a800s/BoardConfigVendor.mk
 
 TARGET_USES_OVERLAY := true
 TARGET_NO_BOOTLOADER := true
@@ -43,7 +43,7 @@ BOARD_RECOVERYIMAGE_PARTITION_SIZE := 16776192
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 838860800
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 20044333056
 BOARD_FLASH_BLOCK_SIZE := 131072
-# BOARD_CUSTOM_GRAPHICS  := ../../../device/sky/a760s/recovery/graphics.c
+# BOARD_CUSTOM_GRAPHICS  := ../../../device/sky/a800s/recovery/graphics.c
 
 # Audio
 BOARD_USES_AUDIO_LEGACY            := true
@@ -70,15 +70,15 @@ WIFI_EXT_MODULE_PATH        := "/system/lib/modules/librasdioif.ko"
 WIFI_EXT_MODULE_NAME        := "librasdioif"
 TARGET_HAVE_HDMI_OUT := false
 TARGET_HARDWARE_3D := true
-TARGET_PREBUILT_KERNEL := device/sky/a760s/kernel
+TARGET_PREBUILT_KERNEL := device/sky/a800s/kernel
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
-TARGET_PROVIDES_LIBRIL := vendor/sky/a760s/proprietary/libril.so
+TARGET_PROVIDES_LIBRIL := vendor/sky/a800s/proprietary/libril.so
 TARGET_PROVIDES_LIBAUDIO := true
 #BOARD_HAS_NO_SELECT_BUTTON := true
 # Use this flag if the board has a ext4 partition larger than 2gb
 #BOARD_HAS_LARGE_FILESYSTEM := true
 
 # OpenGL drivers config file path
-BOARD_EGL_CFG := device/sky/a760s/egl.cfg
+BOARD_EGL_CFG := device/sky/a800s/egl.cfg
 
 COMMON_GLOBAL_CFLAGS += -DREFRESH_RATE=60 -DQCOM_HARDWARE
