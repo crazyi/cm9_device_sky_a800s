@@ -1,2 +1,2 @@
-cm9_device_pantech_a800s
+cm9_device_sky_a800s
 ============================
